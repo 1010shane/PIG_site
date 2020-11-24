@@ -1,0 +1,104 @@
+html {
+  background: black;
+  font-family: Helvetica
+}
+
+h1 {
+  color: white;
+  font-family: Helvetica;
+  font-weight: bolder;
+  font-size:40pt;
+  text-align: center
+
+}
+
+h2, h3, h4 {
+  color: white;
+  font-family: Helvetica
+}
+
+body {
+  background-color: black;
+  font-family: Helvetica
+}
+
+.card {
+  background-color: #33383E;
+  color: white;
+  border:2px solid #FFFFFF;
+  font-family: Helvetica
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: 75%
+}
+
+.card-text {
+  font-size: 30%;
+}
+
+#module {
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 8%;
+  margin-right: 8%;
+  background-color: #33383E;
+  color: white;
+  border:2px solid #FFFFFF;
+}
+
+#module-card {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+body {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.navbar {
+  border: 1px solid white
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.breadcrumb {background: black; border-radius: 4px}
+.breadcrumb li {font-size: 14px;}
+.breadcrumb a {color: rgba(66, 139, 202, 1);}
+.breadcrumb a:hover {color: rgba(42, 100, 150, 1);}
+.breadcrumb>.active {color: rgba(153, 153, 153, 1);}
+.breadcrumb>li+li:before {color: rgba(204, 204, 204, 1); content: "\002F\00a0";}
+
+.list-group {
+  padding-left: 40px;
+  padding-right: 40px
+}
+
+#question_image {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 25px;
+  padding: 15px
+}
+
+#vid_explanation {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

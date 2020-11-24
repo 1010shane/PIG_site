@@ -1,0 +1,19 @@
+{% extends "module_template.html" %}
+
+{%block title%}
+<title>{{title}}</title>
+{%endblock title%}
+
+{% block breadcrum_bar%}
+<li class="breadcrumb-item"><a href="/">Home</a></li>
+<li class="breadcrumb-item"><a href="/GC1">General Chemistry 1</a></li>
+<li class="breadcrumb-item active" aria-current="page">Module 1</li>
+{% endblock breadcrum_bar%}
+
+{% block question_list%}
+<div class="list-group">
+  {%for i in qlist%}
+  <a href="/GC1_m1_q1" class="list-group-item list-group-item-action">{{i}}</a>
+  {% endfor %}
+</div>
+{% endblock question_list%}

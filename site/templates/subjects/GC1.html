@@ -1,0 +1,30 @@
+{% extends "subject_template.html" %}
+
+{%block title%}
+<title>{{title}}</title>
+{%endblock title%}
+
+{%block navbar_subject%}
+<li class="breadcrumb-item active" aria-current="page">General Chemistry 1</li>
+{%endblock navbar_subject%}
+
+{%block page_title%}
+<title>Gen Chem 1 Home</title>
+    <h1>General Chemistry 1<h1/>
+
+{%endblock page_title%}
+
+{%block module_list%}
+
+{%for i in page_vars%}
+<div class="card" id ="module-card">
+  <div class="card-body">
+    <h3 class="card-title" style="font-weight: bolder">Module {{i}}</h3>
+    <h6 class="card-subtitle mb-2 text-muted">Author list</h6>
+    <p class="card-text" style="font-size: small"> Some quick example text to build on the card title {{i}}</p>
+    <a href="/GC1_m1" class="card-link" style="font-size: medium; font-weight: bold">Module 1</a>
+  </div>
+</div>
+{% endfor %}
+
+{%endblock module_list%}

@@ -1,0 +1,27 @@
+{% extends "answers_template.html" %}
+
+{%block title%}
+<title>{{title}}</title>
+{%endblock title%}
+
+{% block breadcrum_bar%}
+<li class="breadcrumb-item"><a href="/">Home</a></li>
+<li class="breadcrumb-item"><a href="/GC1">General Chemistry 1</a></li>
+<li class="breadcrumb-item"><a href="/GC1_m1">Module 1</a></li>
+<li class="breadcrumb-item"><a href="/GC1_m1_q1">Question 1</a></li>
+<li class="breadcrumb-item active" aria-current="page">Answer</li>
+{% endblock breadcrum_bar%}
+
+{%block question%}
+
+<video controls autoplay id="vid_explanation">
+  <source src="/static/videos/GC1/M1/A1.mp4" type="video/mp4">
+ </video>
+
+<div class="text-center">
+  <div class="btn-group" style="margin-top: 10px">
+    <a href="#" class="btn btn-primary btn-lg">Next Question</a>
+    <a href="#" class="btn btn-secondary btn-lg">Leave Feedback</a>
+  </div>
+<div/>
+{%endblock question%}
