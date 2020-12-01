@@ -1,5 +1,8 @@
 from flask import Flask, render_template, url_for, request, send_from_directory
+from feedback_form import FeedbackForm
 app = Flask(__name__)
+
+app.config['SECRET_KEY'] = '15e217f68d01b2bc4465fd26e8877bc4'
 
 @app.route("/")
 @app.route("/home")
@@ -35,6 +38,12 @@ def GC1_m1_q1():
 @app.route("/GC1_m1_a1")
 def GC1_m1_a1():
     return render_template('answers/GC1/M1/A1.html', title = 'GC1 M1 A1')
+
+@app.route("/testform", methods=('GET', 'POST'))
+def testform():
+    form = FeedbackForm()
+    return render_template("forms/test.html", title = 'testform', form = form)
+
 
 
 
